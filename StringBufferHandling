@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class StringBufferHandling {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        StringBuffer sb1 = new StringBuffer();
+        StringBuffer sb2 = new StringBuffer();
+        System.out.println("Capacity of String 1 "+sb1.capacity());
+        System.out.println("Capacity of String 2 "+sb2.capacity());
+
+        System.out.println("Enter a string");
+        String str = sc.nextLine();
+        StringBuffer reversedbuffer = new StringBuffer(str);
+        reversedbuffer.reverse();
+        String reversedUppercase = reversedbuffer.toString().toUpperCase();
+        System.out.println("Reversed string in uppercase: " + reversedUppercase);
+
+        System.out.print("Enter a string to append: ");
+        String appendString = sc.nextLine();
+        reversedbuffer.append(appendString);
+        System.out.println("String after appending: " + reversedbuffer);
+
+        sc.close();
+    }
+}
+
+Output :
+Capacity of String 1 16
+Capacity of String 2 16
+Enter a string
+ hello
+Reversed string in uppercase: OLLEH 
+Enter a string to append:  world
+String after appending: olleh  world
