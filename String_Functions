@@ -1,0 +1,42 @@
+public class String_Functions{
+
+    public static boolean CompareStrings(String str1,String str2){
+        return str1.equals(str2);
+    }
+
+    public static String CopyString(String orginal){
+        return new String(orginal);
+    }
+
+    public static String ConcatenateString(String str1,String str2){
+        return (str1+str2);
+    }
+
+    public static void main(String[] args){
+        String str1 = "Hello";
+        String str2 = "hello";
+        System.out.println("String Comparison");
+        System.out.println("Are the strings equal? " + CompareStrings(str1, str2));
+
+        String orginal = "Copy me";
+        String copied = CopyString(orginal);
+        System.out.println("String copy:");
+        System.out.println("Original string: " + orginal);
+        System.out.println("Copied string: " + copied);
+
+        String string1 = "hello";
+        String string2 = "world";
+        String concatenated = ConcatenateString(string1, string2);
+        System.out.println("String concatenation:");
+        System.out.println("Concatenated string: " + concatenated);
+    }
+}
+
+Output :
+String Comparison
+Are the strings equal? false
+String copy:
+Original string: Copy me
+Copied string: Copy me
+String concatenation:
+Concatenated string: helloworld
