@@ -26,3 +26,20 @@ public class GymMembershipManager {
         scanner.close();
     }
 }
+
+Output :
+Welcome to Gym Membership Management System
+Enter the name :
+Arjun
+Enter the age :
+20
+Enter the membership status(true/false)? :
+true
+Enter the duration(in months) :
+20
+Member Details :
+Name :Arjun
+Age :20
+Membership Status :Active
+Duration :20
+Fee :1000.0
